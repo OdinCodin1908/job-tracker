@@ -6,6 +6,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+const jobsRouter = require('./routes/jobs');
+app.use('/api/jobs', jobsRouter);
 
 app.get('/', (req, res) => {
   res.json({ message: 'Job Tracker API is running' });
