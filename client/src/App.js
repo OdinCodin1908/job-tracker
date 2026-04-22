@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://job-trackerii.onrender.com/api';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
